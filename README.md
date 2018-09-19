@@ -55,3 +55,12 @@ application.android.on(application.AndroidApplication.activityCreatedEvent, func
     }
 });
 ```
+
+
+As a result you can now receive shared content from other apps to your NativeScript application.
+
+![image one](./demo-001.png)
+
+![image two](./demo-002.png)
+
+![image three](./demo-003.png)
