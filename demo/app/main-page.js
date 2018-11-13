@@ -14,15 +14,15 @@ function navigatingTo(args) {
         var type = intent.getType();
         if (android.content.Intent.ACTION_SEND === action && type != null) {
             if (type.startsWith("text/")) {
-                handleSendText(intent); // Handle text being sent
+                handleSendText(intent); // Handle text being received
             }
             else if (type.startsWith("image/")) {
-                handleSendImage(intent); // Handle single image being sent
+                handleSendImage(intent); // Handle single image being received
             }
         }
         else if (android.content.Intent.ACTION_SEND_MULTIPLE === action && type != null) {
             if (type.startsWith("image/")) {
-                handleSendMultipleImages(intent); // Handle multiple images being sent
+                handleSendMultipleImages(intent); // Handle multiple images being received
             }
         }
         else {
