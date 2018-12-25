@@ -7,5 +7,7 @@
     <StackLayout class="p-20">
         <Label text="Shared image" class="h1 text-center"/>
         <Image src="{{ bitmap }}" stretch="none" />
+        <Button text="getAppSettings" tap="getAppSettings" />
+        
     </StackLayout>
 </Page>

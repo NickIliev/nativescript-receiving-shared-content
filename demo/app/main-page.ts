@@ -3,7 +3,17 @@ import * as application from "tns-core-modules/application";
 import { Page, Observable, EventData } from "tns-core-modules/ui/page/page";
 import { isAndroid } from "tns-core-modules/platform";
 
+import { getAllKeys } from "tns-core-modules/application-settings";
+
 let vm = new Observable();
+
+
+export function getAppSettings() {
+    console.log("getAppSettings");
+
+    let keys = getAllKeys();
+    console.log(keys);
+}
 
 export function navigatingTo(args: EventData) {
 
@@ -75,4 +85,6 @@ function handleSendMultipleImages(intent: android.content.Intent) {
         }
     }
 }
+
+
 
