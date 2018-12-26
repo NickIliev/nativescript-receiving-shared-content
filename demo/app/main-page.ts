@@ -3,7 +3,7 @@ import * as application from "tns-core-modules/application";
 import { Page, Observable, EventData } from "tns-core-modules/ui/page/page";
 import { isAndroid } from "tns-core-modules/platform";
 
-import { getAllKeys } from "tns-core-modules/application-settings";
+import { getAllKeys, getString } from "tns-core-modules/application-settings";
 
 let vm = new Observable();
 
@@ -13,6 +13,9 @@ export function getAppSettings() {
 
     let keys = getAllKeys();
     console.log(keys);
+
+    let myStr = getString("foo");
+    console.log(myStr);
 }
 
 export function navigatingTo(args: EventData) {
