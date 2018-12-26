@@ -6,7 +6,7 @@ The iOS implementation is entirely outside the built NativeScript app. Follow [t
 
 > **Important**: You will need an AppID with provisioning profile that has `App Groups` enabled!
 
-> **Noter**: Once NativeScript supports [App Extensions](https://github.com/NativeScript/nativescript-cli/issues/3965) there will be an update with the source need ot enable the Share extension via NativeScript.
+> **Note**: Once NativeScript supports [App Extensions](https://github.com/NativeScript/nativescript-cli/issues/3965) there will be an update with the source need ot enable the Share extension via NativeScript.
 
 ## Android
 
