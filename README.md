@@ -1,4 +1,13 @@
 # nativescript-receiving-shared-content
+
+## iOS
+
+The iOS implementation is entirely outside the built NativeScript app. Follow [this link](https://www.technetexperts.com/mobile/share-extension-in-ios-application-overview-with-example/) for step-by-step instructions. Structured NativeScript instructions [here](https://github.com/NickIliev/NS-Issues-2018-II/tree/master/test/share-extension).
+
+> **Important**: You will need an AppID with provisioning profile that has `App Groups` enabled!
+
+## Android
+
 POC for implementing https://developer.android.com/training/sharing/receive#java
 
 With the above your application will be listed in the share action intent on Android and users can load and shre different media types **to** your applicaiton
